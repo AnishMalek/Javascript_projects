@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <script>
+
+    let choice=Number(prompt("enter 1 for find area of square \n  2 for triangle \n 3 for rectangle \n  4 for circle"))
+
+    if (choice==1) {
+
+        let value = Number(prompt("Enter value to find area of square"));
+        
+        let square = value*value;
+
+        console.log(`are of square is ${square}`);
+        
+    }
+
+    else if(choice==2){
+
+          let base = Number(prompt("Enter value of base"));
+          let height = Number(prompt("Enter value of height"));
+        
+        let triangle = 1/2*base*height;
+
+        console.log(`are of triangle is ${triangle}`);
+    }
+
+    else if(choice==3){
+
+         let  length= Number(prompt("Enter value of length"));
+         let  width = Number(prompt("Enter value of width"));
+
+         let rectangle= length*width;
+
+         console.log(`Area of rectangle is ${rectangle}`);
+         
+    }
+
+    else if(choice==4){
+        
+        let r=Number(prompt("Enter radius of circle"));
+
+        let pie=3.14;
+
+        let circle = pie*r*r;
+
+        console.log(`area of circle is ${circle}`);
+        
+    }
+  </script>
+</body>
+</html>

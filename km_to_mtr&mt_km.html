@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+    let choice=Number(prompt("press 1 for km->meter or press 2 for Meter->km"));
+  
+         if(choice==1){
+
+       let km=Number(prompt("Enter value to convert into meter"))
+
+       let meter=km*1000;
+
+       console.log(`${meter} meter`);
+
+         }
+        
+         else if(choice==2){
+            let mt=Number(prompt("Enter value to convert into kilometer"))
+
+            let km=mt/1000
+
+            console.log(`${km} kilometer`);
+            
+         }
+
+         else{
+            console.log("invalid choice");
+            
+         }
+       
+    </script>
+</body>
+</html>
