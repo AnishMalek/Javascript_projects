@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //remove dupicate values
+
+        let arr=[10,20,20,30,40,50,50]
+
+       let arr2=arr.filter((value,index)=>{
+                return arr.indexOf(value)===index;
+        });
+
+        console.log(arr2);
+        
+    </script>
+    
+</body>
+</html>
