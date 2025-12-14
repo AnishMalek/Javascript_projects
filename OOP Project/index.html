@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+</head>
+<body>
+
+<script>
+class Univercity {
+    constructor(name) {
+        this.name = name;
+        this.departments = [];
+    }
+
+    add_department = (department) => {
+        this.departments.push(department);
+        console.log(`University Name is : ${this.name} | Added Department : ${department}`);
+    }
+
+    removedata = (department) => {
+        const index = this.departments.indexOf(department);
+        if (index !== -1) {
+            this.departments.splice(index, 1);
+            console.log(`University Name is : ${this.name} | Removed Department : ${department}`);
+        } else {
+            console.log(`Department "${department}" not found`);
+        }
+    }
+
+    displaydata = () => {
+        console.log(`University Name : ${this.name}`);
+        if (this.departments.length === 0) {
+            console.log('No department available');
+        } else {
+            this.departments.forEach((department, index) => {
+                console.log(`${index + 1}. ${department}`);
+            });
+        }
+    }
+}
+
+const data = new Univercity("Vrundavan BCA College");
+data.add_department('DBMS');
+data.add_department('Advance C');
+data.add_department('Python');
+
+data.displaydata();
+
+data.removedata('Advance C');
+
+data.displaydata();
+</script>
+
+</body>
+</html>
