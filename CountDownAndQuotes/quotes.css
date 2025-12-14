@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', system-ui, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle at top, #1f2933, #0f172a);
+}
+
+/* main card */
+.quotes-container{
+    width: 420px;
+    padding: 32px 28px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #111827, #020617);
+    color: #e5e7eb;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+/* glowing line */
+.quotes-container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(99,102,241,0.5),
+        transparent
+    );
+    transform: translateX(-100%);
+    animation: shine 6s infinite;
+}
+
+@keyframes shine{
+    0%{ transform: translateX(-100%); }
+    60%{ transform: translateX(100%); }
+    100%{ transform: translateX(100%); }
+}
+
+.quotes-container h1{
+    font-size: 24px;
+    margin-bottom: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* quote box */
+.quote-box{
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 26px;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* quote text */
+.quote{
+    font-size: 17px;
+    line-height: 1.7;
+    color: #c7d2fe;
+    position: relative;
+}
+
+.quote::before{
+    content: "“";
+    font-size: 40px;
+    color: #6366f1;
+    position: absolute;
+    left: -18px;
+    top: -18px;
+}
+
+.quote::after{
+    content: "”";
+    font-size: 40px;
+    color: #6366f1;
+    position: absolute;
+    right: -18px;
+    bottom: -28px;
+}
+
+/* button */
+.btn{
+    margin-top: 26px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    color: #020617;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(99,102,241,0.4);
+}
