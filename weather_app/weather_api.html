@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather UI</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+<div class="weather-card">
+
+    <!-- Search Box -->
+    <div class="search-box">
+        <input type="text" placeholder="Search city" id="input">
+        <button id="btn">🔍</button>
+    </div>
+
+    <div class="top">
+        <p class="location" id="city">Beijing</p>
+        <h2 id="cloud">Cloudy</h2>
+        <h1 id="temp">29°</h1>
+    </div>
+
+    <div class="bottom">
+        <div class="info">
+            <p class="label" >Humidity</p>
+            <p  id="humidity"></p>
+        </div>
+        <div class="info">
+            <p class="label">Wind</p>
+            <p id="wind">10 km</p>
+        </div>
+        <div class="info">
+            <p class="label">Feels Like</p>
+            <p  id="feels_like  ">32°</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="weather.js"></script>
+</body>
+</html>

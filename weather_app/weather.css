@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Body Background ===== */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* ===== Main Weather Card ===== */
+.weather-card {
+    width: 320px;
+    height: 550px;
+    background: linear-gradient(to bottom, #1f4037, #99f2c8);
+    border-radius: 25px;
+    color: #e8fff7;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    padding-top: 15px;
+}
+
+/* ===== Search Box ===== */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box button {
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    background: #ffffff;
+    font-size: 16px;
+}
+
+/* ===== Top Section ===== */
+.top {
+    height: 60%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.top p{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.top h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.location {
+    margin-top: 6px;
+    opacity: 0.85;
+    font-size: 15px;
+}
+
+.top h1 {
+    font-size: 80px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* ===== Bottom Info Panel ===== */
+.bottom {
+    height: 30%;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ===== Info Items ===== */
+.info {
+    text-align: center;
+}
+
+.label {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.value {
+    font-size: 18px;
+    margin-top: 6px;
+    font-weight: 600;
+}
